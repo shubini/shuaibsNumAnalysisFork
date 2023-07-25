@@ -12,7 +12,7 @@ $$
 Use reflections to determine the entries of orthogonal/unitary matrices $Q_1, Q_2, Q_3$ such that
 $$
 Q_1 𝐚 = \begin{bmatrix} 3 \\ 0 \\ 0 \end{bmatrix}, Q_2 𝐚 = \begin{bmatrix} -3 \\ 0 \\ 0 \end{bmatrix},
-Q_3 𝐛 = \begin{bmatrix} \sqrt{3} \\ 0 \\ 0 \end{bmatrix}
+Q_3 𝐛 = \begin{bmatrix} 3 \\ 0 \\ 0 \end{bmatrix}
 $$
 
 **SOLUTION**
@@ -130,7 +130,7 @@ We first show for $m < n$ that a QR decomposition exists. Writing
 $$
 A = [𝐚_1 | ⋯ | 𝐚_n]
 $$
-and let $A = [𝐚_1 | ⋯ | 𝐚_m] = Q R_m$. It follows that $R := Q^⋆ A$ is right-triangular.
+and taking the first $m$ columns (so that it is square) we can write $[𝐚_1 | ⋯ | 𝐚_m] = Q R_m$. It follows that $R := Q^⋆ A$ is right-triangular.
 
 We can write:
 $$
@@ -184,7 +184,7 @@ hence $Ũ$ is also normal. The result follows from induction.
 **END**
 
 
-**Problem 3.2** Show that every matrix $A ∈ ℂ^{n × n}$ has a _Schur decomposition_: it can be written
+**Problem 3.2⋆** Show that every matrix $A ∈ ℂ^{n × n}$ has a _Schur decomposition_: it can be written
 as
 $$
 A = Q U Q^⋆
@@ -205,7 +205,7 @@ Because conjugation with $Q$ is a similarity transformation we know the eigenval
 
 **END**
 
-**Problem 3.3** Prove the spectral theorem for normal matrices: for every normal matrix $A ∈ ℂ^{n × n}$
+**Problem 3.3⋆** Prove the spectral theorem for normal matrices: for every normal matrix $A ∈ ℂ^{n × n}$
  there exists a unitary matrix $Q$ such that
 $$
 A = Q Λ Q^⋆
